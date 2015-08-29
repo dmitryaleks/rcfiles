@@ -78,3 +78,9 @@ nnoremap <silent> <F7> :%le<CR>
 
 " use 'jj' instead of ESC to leave Insert mode
 inoremap jj <Esc>
+
+" disable bells
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+  autocmd GUIEnter * set visualbell t_vb=
+endif
